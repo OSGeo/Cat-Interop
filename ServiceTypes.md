@@ -56,9 +56,9 @@ urn:ogc:serviceType:WebProcessingService:0.4
 ```
 I like this structure, and would like to propse a few more that would be managed by Unidata:
 ```
-url:unidata:serviceType:OPeNDAP:2.0.0
-url:unidata:serviceType:NetcdfSubsetService:1.0.0
-url:unidata:serviceType:CdmRemote:0.1.0
+urn:unidata:serviceType:OPeNDAP:2.0.0
+urn:unidata:serviceType:NetcdfSubsetService:1.0.0
+urn:unidata:serviceType:CdmRemote:0.1.0
 ```
 
 Perhaps there is a better way to build this list, but just wanted to get this down here...
