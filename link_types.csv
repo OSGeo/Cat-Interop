@@ -14,11 +14,11 @@ urn:x-esri:serviceType:ArcIMS,ESRI ArcIMS Service
 urn:x-esri:serviceType:ArcGIS,ESRI ArcGIS Service
 urn:x-unidata:serviceType:OPeNDAP:2.0.0,OPeNDAP 2.0.0
 urn:x-unidata:serviceType:NetCDFSubsetService:1.0.0,NetCDF Subset Service 1.0.0
-urn:x-unidata:serviceType:CDMRemote:0.1.0,CDM Remote Web Service 0.1.0
+urn:x-unidata:serviceType:CDMRemote:0.1.0,Common Data Model Remote Web Service 0.1.0
 urn:ogc:dataFormat:GML:2.0,OGC Geography Markup Language 2.0
 urn:ogc:dataFormat:GML:2.1.1,OGC Geography Markup Language 2.1.1
 urn:ogc:dataFormat:GML:2.1.2,OGC Geography Markup Language 2.1.2
 urn:ogc:dataFormat:GML:3.0,OGC Geography Markup Language 3.0
 urn:ogc:dataFormat:GML:3.1.1,OGC Geography Markup Language 3.1.1
-urn:x-osgeo:link:html,Web link / URL
-urn:x-osgeo:link:www,Web Thumbnail / browse image
+urn:x-osgeo:link:www,Web link / URL
+urn:x-osgeo:link:www-thumbnail,Web Thumbnail / browse image
