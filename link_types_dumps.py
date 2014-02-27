@@ -1,4 +1,4 @@
-# script to serialize link type lists to JSON or XML
+# script to serialize link type lists to JSON
 import csv
 import json
 
@@ -15,7 +15,6 @@ def to_json(csvobj):
     return json.dumps(payload)
 
 # main
-
 with open('link_types.csv') as csvfile:
     CSV_READER = csv.reader(csvfile)
     PAYLOAD = to_json(CSV_READER)
