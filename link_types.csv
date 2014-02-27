@@ -1,4 +1,4 @@
-link-type,description
+link_type,description
 urn:ogc:serviceType:CatalogueService:2.0.2,OGC Catalogue Service for the Web 2.0.2
 urn:ogc:serviceType:SensorObservationService:1.0.0,OGC Sensor Observation Service 1.0.0
 urn:ogc:serviceType:SensorObservationService:2.0.0,OGC Sensor Observation Service 2.0.0
