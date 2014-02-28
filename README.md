@@ -1,4 +1,4 @@
-##OSGeo Working Group on Catalogue Interoperability
+##OSGeo Catalogue Interoperability Working Group
 A place to version documents and discuss issues surrounding the Cat-Interop Project.
 
 * Here's more about the overall project: http://wiki.osgeo.org/wiki/Cat-Interop.
