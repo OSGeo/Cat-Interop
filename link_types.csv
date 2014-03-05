@@ -1,24 +1,32 @@
-link_type,description
-urn:ogc:serviceType:CatalogueService:2.0.2,OGC Catalogue Service for the Web 2.0.2
-urn:ogc:serviceType:SensorObservationService:1.0.0,OGC Sensor Observation Service 1.0.0
-urn:ogc:serviceType:SensorObservationService:2.0.0,OGC Sensor Observation Service 2.0.0
-urn:ogc:serviceType:WebCoverageService:1.0.0,OGC Web Coverage Service 1.1.0
-urn:ogc:serviceType:WebCoverageService:1.0.0,OGC Web Coverage Service 1.0.0
-urn:ogc:serviceType:WebFeatureService:2.0.0,OGC Web Feature Service 2.0.0
-urn:ogc:serviceType:WebFeatureService:1.1.0,OGC Web Feature Service 1.1.0
-urn:ogc:serviceType:WebFeatureService:1.0.0,OGC Web Feature Service 1.0.0
-urn:ogc:serviceType:WebMapService:1.3.0,OGC Web Map Service 1.3.0
-urn:ogc:serviceType:WebMapService:1.1.1,OGC Web Map Service 1.1.1
-urn:ogc:serviceType:WebProcessingService:1.0.0,OGC Web Processing Service 1.0.0
-urn:x-esri:serviceType:ArcIMS,ESRI ArcIMS Service
-urn:x-esri:serviceType:ArcGIS,ESRI ArcGIS Service
-urn:x-unidata:serviceType:OPeNDAP:2.0.0,OPeNDAP 2.0.0
-urn:x-unidata:serviceType:NetCDFSubsetService:1.0.0,NetCDF Subset Service 1.0.0
-urn:x-unidata:serviceType:CDMRemote:0.1.0,Common Data Model Remote Web Service 0.1.0
-urn:ogc:dataFormat:GML:2.0,OGC Geography Markup Language 2.0
-urn:ogc:dataFormat:GML:2.1.1,OGC Geography Markup Language 2.1.1
-urn:ogc:dataFormat:GML:2.1.2,OGC Geography Markup Language 2.1.2
-urn:ogc:dataFormat:GML:3.0,OGC Geography Markup Language 3.0
-urn:ogc:dataFormat:GML:3.1.1,OGC Geography Markup Language 3.1.1
-urn:x-osgeo:link:www,Web link / URL
-urn:x-osgeo:link:www-thumbnail,Web Thumbnail / browse image
+link_type,description,http URI (suggestions…),
+urn:ogc:serviceType:CatalogueService:2.0.2,OGC Catalogue Service for the Web 2.0.2,http://www.opengis.net/serviceType/csw/2.0,
+urn:ogc:serviceType:SensorObservationService:1.0.0,OGC Sensor Observation Service 1.0.0,http://www.opengis.net/serviceType/sos/1.0,
+urn:ogc:serviceType:SensorObservationService:2.0.0,OGC Sensor Observation Service 2.0.0,http://www.opengis.net/serviceType/sos/2.0,
+urn:ogc:serviceType:WebCoverageService:1.0.0,OGC Web Coverage Service 1.1.0,http://www.opengis.net/serviceType/wcs/1.1,
+urn:ogc:serviceType:WebCoverageService:1.0.0,OGC Web Coverage Service 1.0.0,http://www.opengis.net/serviceType/wcs/1.0,
+urn:ogc:serviceType:WebFeatureService:2.0.0,OGC Web Feature Service 2.0.0,http://www.opengis.net/serviceType/wfs/2.0,
+urn:ogc:serviceType:WebFeatureService:1.1.0,OGC Web Feature Service 1.1.0,http://www.opengis.net/serviceType/wfs/1.1,
+urn:ogc:serviceType:WebFeatureService:1.0.0,OGC Web Feature Service 1.0.0,http://www.opengis.net/serviceType/sos/1.0,
+urn:ogc:serviceType:WebMapService:1.3.0,OGC Web Map Service 1.3.0,http://www.opengis.net/serviceType/wms/1.3,
+urn:ogc:serviceType:WebMapService:1.1.1,OGC Web Map Service 1.1.1,http://www.opengis.net/serviceType/wms/1.1,
+urn:ogc:serviceType:WebProcessingService:1.0.0,OGC Web Processing Service 1.0.0,http://www.opengis.net/serviceType/wps/1.0,
+urn:x-esri:serviceType:ArcIMS,ESRI ArcIMS Service,,
+urn:x-esri:serviceType:ArcGIS,ESRI ArcGIS Service,,
+urn:x-unidata:serviceType:OPeNDAP:2.0.0,OPeNDAP 2.0.0,,
+urn:x-unidata:serviceType:NetCDFSubsetService:1.0.0,NetCDF Subset Service 1.0.0,,
+urn:x-unidata:serviceType:CDMRemote:0.1.0,Common Data Model Remote Web Service 0.1.0,,
+urn:ogc:dataFormat:GML:2.0,OGC Geography Markup Language 2.0,http://www.opengis.net/dataFormat/std/spec/2.0,"This is an XML application schema framework; without a profile for the feature types that are implemented, it doesn't get you too far.  NOTE: dataFormat is not a valid OGC resource type (see http://www.opengis.net/def/type/), so these would have to be scoped to osgeo or we'd have to work with OGC to update this."
+urn:ogc:dataFormat:GML:2.1.1,OGC Geography Markup Language 2.1.1,http://www.opengis.net/dataFormat/std/spec/2.1,see above; interesting issue here about whether third place version increments are a different spec.
+urn:ogc:dataFormat:GML:2.1.2,OGC Geography Markup Language 2.1.2,http://www.opengis.net/dataFormat/std/spec/2.1,see above
+urn:ogc:dataFormat:GML:3.0,OGC Geography Markup Language 3.0,http://www.opengis.net/dataFormat/std/spec/3.0,see above
+urn:ogc:dataFormat:GML:3.1.1,OGC Geography Markup Language 3.1.1,http://www.opengis.net/dataFormat/std/spec/3.1,see above
+,OGC Geography Markup Language 3.2.0,http://www.opengis.net/dataFormat/std/spec/3.2,see above
+urn:x-osgeo:link:www http,Web link / URL,,"http is the protocol, so shouldn't this be a service type (it's just a service type that's not tunneled on http)"
+urn:x-osgeo:link:www-thumbnail,Web Thumbnail / browse image,,a 'rel' property on the link; 
+,IRIS seismic data web service,http://service.iris.edu/fdsnws/event/1/,
+,"OGC OWS context document, ATOM, v1.0",http://www.opengis.net/spec/owc-atom/1.0,
+,TileMill map service,http://a.tiles.mapbox.com/v3/,
+,ws service,http://www.w3.org/TR/wsdl20/,
+,OpenSearch endpoint,,
+,Odata endpoint,,
+,Linked Data endpoint,,
