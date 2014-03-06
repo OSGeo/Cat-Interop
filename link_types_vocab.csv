@@ -1,7 +1,7 @@
 link_type,description,redirect,comment
 http://osgeo.org/vocab/service/ogc/csw/2.0.2,OGC Catalogue Service for the Web 2.0.2,http://www.opengis.net/cat/csw/2.0.2,this is an overlay (tunneling) protocol
 http://osgeo.org/vocab/service/ogc/sos/1.0,OGC Sensor Observation Service 1.0.0,http://www.opengis.net/sos/1.0,this is an overlay (tunneling) protocol
-http://osgeo.org/vocab/service/ogc/2.0,OGC Sensor Observation Service 2.0.0,http://www.opengis.net/sos/2.0,this is an overlay (tunneling) protocol
+http://osgeo.org/vocab/service/ogc/sos/2.0,OGC Sensor Observation Service 2.0.0,http://www.opengis.net/sos/2.0,this is an overlay (tunneling) protocol
 http://osgeo.org/vocab/service/ogc/wcs,OGC Web Coverage Service 1.1.0,http://www.opengis.net/wcs,this is an overlay (tunneling) protocol
 http://osgeo.org/vocab/service/ogc/wcs/1.1,OGC Web Coverage Service 1.1.0,http://www.opengis.net/wcs/1.1,this is an overlay (tunneling) protocol
 http://osgeo.org/vocab/service/ogc/wfs,OGC Web Feature Service 1,http://www.opengis.net/wfs,this is an overlay (tunneling) protocol
