@@ -1,4 +1,4 @@
-link_type,description,redirect,comment,status,targetProperty,submitter
+termURI,description,redirect,comment,status,targetProperty,submitter
 http://vocab.osgeo.org/service/ogc/csw/2.0.2,OGC Catalogue Service for the Web 2.0.2,http://www.opengis.net/cat/csw/2.0.2,this is an overlay (tunneling) protocol,adopted,srv:serviceType;gmd:protocol;usgin:overlayAPI,@tomkralidis
 http://vocab.osgeo.org/service/ogc/sos/1.0,OGC Sensor Observation Service 1.0.0,http://www.opengis.net/sos/1.0,this is an overlay (tunneling) protocol,adopted,srv:serviceType;gmd:protocol;usgin:overlayAPI,@tomkralidis
 http://vocab.osgeo.org/service/ogc/sos/2.0,OGC Sensor Observation Service 2.0.0,http://www.opengis.net/sos/2.0,this is an overlay (tunneling) protocol,adopted,srv:serviceType;gmd:protocol;usgin:overlayAPI,@tomkralidis
