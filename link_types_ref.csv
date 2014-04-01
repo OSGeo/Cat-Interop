@@ -1,0 +1,14 @@
+link_type,link_type_type,description,URI,target_property
+OGC:CSW,service,OGC Catalogue Service for the Web,http://www.opengis.net/def/serviceType/ogc/csw,srv:serviceType;gmd:protocol;usgin:overlayAPI
+OGC:SOS,service,OGC Sensor Observation Service,http://www.opengis.net/def/serviceType/ogc/sos,srv:serviceType;gmd:protocol;usgin:overlayAPI
+OGC:WCS,service,OGC Web Coverage Service,http://www.opengis.net/def/serviceType/ogc/wcs,srv:serviceType;gmd:protocol;usgin:overlayAPI
+OGC:WFS,service,OGC Web Feature Service,http://www.opengis.net/def/serviceType/ogc/wfs,srv:serviceType;gmd:protocol;usgin:overlayAPI
+OGC:WMS,service,OGC Web Map Service,http://www.opengis.net/def/serviceType/ogc/wms,srv:serviceType;gmd:protocol;usgin:overlayAPI
+OGC:WPS,service,OGC Web Processing Service,http://www.opengis.net/def/serviceType/ogc/wps,srv:serviceType;gmd:protocol;usgin:overlayAPI
+ESRI:ArcIMS,service,ESRI ArcIMS Service,urn:x-esri:serviceType:ArcIMS,srv:serviceType;gmd:protocol;usgin:overlayAPI
+ESRI:ArcGIS,service,ESRI ArcGIS Service,urn:x-esri:serviceType:ArcGIS,srv:serviceType;gmd:protocol;usgin:overlayAPI
+OPeNDAP:OPeNDAP,service,OPeNDAP service,http://opendap.org,srv:serviceType;gmd:protocol;usgin:overlayAPI
+Unidata:NCSS,service,NetCDF Subset Service,https://www.unidata.ucar.edu/software/thredds/current/tds/interfaceSpec/NetcdfSubsetService.html,TODO
+Unidata:CDM,service,Common Data Model Remote Web Service,https://www.unidata.ucar.edu/software/thredds/current/netcdf-java/stream/CdmRemote.html,TODO
+OGC:GML,data,OGC Geography Markup Language,http://www.opengis.net/gml,gmd:applicationProfile
+WWW:LINK,information,Web Address (URL),http://www.w3.org/TR/xlink/,gmd:URL;@xlink:href
