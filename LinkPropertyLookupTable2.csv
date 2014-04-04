@@ -1,5 +1,5 @@
 identifier,label,url,target,owner,resource_type,registrant,comments
-OGC:CSW,http://www.opengis.net/def/serviceType/ogc/csw,OGC Catalogue Service for the Web,http://www.opengeospatial.org/standards/cat,srv:serviceType;gmd:protocol;usgin:overlayAPI,,service,@tomkralidis,Example; should the version number be in the URI and string value?
+OGC:CSW,http://www.opengis.net/def/serviceType/ogc/csw,OGC Catalogue Service for the Web,http://www.opengeospatial.org/standards/cat,srv:serviceType;gmd:protocol;usgin:overlayAPI,service,@tomkralidis,Example; should the version number be in the URI and string value?
 OGC:SOS,http://www.opengis.net/def/serviceType/ogc/sos,OGC Sensor Observation Service,http://www.opengeospatial.org/standards/sos,srv:serviceType;gmd:protocol;usgin:overlayAPI,,service,@tomkralidis,Example
 OGC:WCS,http://www.opengis.net/def/serviceType/ogc/wcs,OGC Web Coverage Service,http://www.opengeospatial.org/standards/wcs,srv:serviceType;gmd:protocol;usgin:overlayAPI,,service,@tomkralidis,Example
 OGC:WFS,http://www.opengis.net/def/serviceType/ogc/wfs,OGC Web Feature Service,http://www.opengeospatial.org/standards/wfs,srv:serviceType;gmd:protocol;usgin:overlayAPI,,service,@tomkralidis,Example
