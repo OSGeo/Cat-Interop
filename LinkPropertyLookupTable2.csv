@@ -4,7 +4,7 @@ OGC:SOS,http://www.opengis.net/def/serviceType/ogc/sos,OGC Sensor Observation Se
 OGC:WCS,http://www.opengis.net/def/serviceType/ogc/wcs,OGC Web Coverage Service,http://www.opengeospatial.org/standards/wcs,srv:serviceType;gmd:protocol;usgin:overlayAPI,service,@tomkralidis,Example
 OGC:WFS,http://www.opengis.net/def/serviceType/ogc/wfs,OGC Web Feature Service,http://www.opengeospatial.org/standards/wfs,srv:serviceType;gmd:protocol;usgin:overlayAPI,service,@tomkralidis,Example
 OGC:WMS,http://www.opengis.net/def/serviceType/ogc/wms,OGC Web Map Service,http://www.opengeospatial.org/standards/wms,srv:serviceType;gmd:protocol;usgin:overlayAPI,service,@tomkralidis,Example
-OGC:WPS,http://www.opengis.net/def/serviceType/ogc/wps,OGC Web Processing Service,http://www.opengeospatial.org/standards/wps,srv:serviceType;gmd:protocol;usgin:overlayAPI,,service,@tomkralidis,Example
+OGC:WPS,http://www.opengis.net/def/serviceType/ogc/wps,OGC Web Processing Service,http://www.opengeospatial.org/standards/wps,srv:serviceType;gmd:protocol;usgin:overlayAPI,service,@tomkralidis,Example
 ESRI:ArcIMS,urn:x-esri:serviceType:ArcIMS,ESRI ArcIMS Service,srv:serviceType;gmd:protocol;usgin:overlayAPI,service,@tomkralidis,Example
 ESRI:ArcGIS,urn:x-esri:serviceType:ArcGIS,ESRI ArcGIS Service,srv:serviceType;gmd:protocol;usgin:overlayAPI,service,@tomkralidis,Example
 OPeNDAP:OPeNDAP,http://opendap.org,OPeNDAP service,,srv:serviceType;gmd:protocol;usgin:overlayAPI,service,@tomkralidis,Example
