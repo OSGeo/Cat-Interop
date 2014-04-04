@@ -7,7 +7,7 @@ OGC:WMS,http://www.opengis.net/def/serviceType/ogc/wms,OGC Web Map Service,http:
 OGC:WPS,http://www.opengis.net/def/serviceType/ogc/wps,OGC Web Processing Service,http://www.opengeospatial.org/standards/wps,srv:serviceType;gmd:protocol;usgin:overlayAPI,,service,@tomkralidis,Example
 ESRI:ArcIMS,urn:x-esri:serviceType:ArcIMS,ESRI ArcIMS Service,,srv:serviceType;gmd:protocol;usgin:overlayAPI,,service,@tomkralidis,Example
 ESRI:ArcGIS,urn:x-esri:serviceType:ArcGIS,ESRI ArcGIS Service,,srv:serviceType;gmd:protocol;usgin:overlayAPI,,service,@tomkralidis,Example
-ESRI:MPK,http://esriurl.com/mpk.xml,ArcGIS Map Package, http://esriurl.com/mpk.xml,,,,@mhogeweg,Example
+ESRI:MPK,http://esriurl.com/mpk.xml,ArcGIS Map Package, http://esriurl.com/mpk.xml,,gmd:URL;@xlink:href,data,@mhogeweg,Example
 OPeNDAP:OPeNDAP,http://opendap.org,OPeNDAP service,,srv:serviceType;gmd:protocol;usgin:overlayAPI,,service,@tomkralidis,Example
 UNIDATA:NCSS,https://www.unidata.ucar.edu/software/thredds/current/tds/interfaceSpec/NetcdfSubsetService.html,NetCDF Subset Service,,TODO,,service,@tomkralidis,Example
 UNIDATA:CDM,https://www.unidata.ucar.edu/software/thredds/current/netcdf-java/stream/CdmRemote.html,Common Data Model Remote Web Service,,TODO,,service,@tomkralidis,Example
