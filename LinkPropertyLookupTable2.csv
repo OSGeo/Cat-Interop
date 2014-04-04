@@ -1,13 +1,13 @@
 identifier,label,url,target,owner,resource_type,registrant,comments
 OGC:CSW,http://www.opengis.net/def/serviceType/ogc/csw,OGC Catalogue Service for the Web,http://www.opengeospatial.org/standards/cat,srv:serviceType;gmd:protocol;usgin:overlayAPI,service,@tomkralidis,Example; should the version number be in the URI and string value?
-OGC:SOS,http://www.opengis.net/def/serviceType/ogc/sos,OGC Sensor Observation Service,http://www.opengeospatial.org/standards/sos,srv:serviceType;gmd:protocol;usgin:overlayAPI,,service,@tomkralidis,Example
-OGC:WCS,http://www.opengis.net/def/serviceType/ogc/wcs,OGC Web Coverage Service,http://www.opengeospatial.org/standards/wcs,srv:serviceType;gmd:protocol;usgin:overlayAPI,,service,@tomkralidis,Example
-OGC:WFS,http://www.opengis.net/def/serviceType/ogc/wfs,OGC Web Feature Service,http://www.opengeospatial.org/standards/wfs,srv:serviceType;gmd:protocol;usgin:overlayAPI,,service,@tomkralidis,Example
-OGC:WMS,http://www.opengis.net/def/serviceType/ogc/wms,OGC Web Map Service,http://www.opengeospatial.org/standards/wms,srv:serviceType;gmd:protocol;usgin:overlayAPI,,service,@tomkralidis,Example
+OGC:SOS,http://www.opengis.net/def/serviceType/ogc/sos,OGC Sensor Observation Service,http://www.opengeospatial.org/standards/sos,srv:serviceType;gmd:protocol;usgin:overlayAPI,service,@tomkralidis,Example
+OGC:WCS,http://www.opengis.net/def/serviceType/ogc/wcs,OGC Web Coverage Service,http://www.opengeospatial.org/standards/wcs,srv:serviceType;gmd:protocol;usgin:overlayAPI,service,@tomkralidis,Example
+OGC:WFS,http://www.opengis.net/def/serviceType/ogc/wfs,OGC Web Feature Service,http://www.opengeospatial.org/standards/wfs,srv:serviceType;gmd:protocol;usgin:overlayAPI,service,@tomkralidis,Example
+OGC:WMS,http://www.opengis.net/def/serviceType/ogc/wms,OGC Web Map Service,http://www.opengeospatial.org/standards/wms,srv:serviceType;gmd:protocol;usgin:overlayAPI,service,@tomkralidis,Example
 OGC:WPS,http://www.opengis.net/def/serviceType/ogc/wps,OGC Web Processing Service,http://www.opengeospatial.org/standards/wps,srv:serviceType;gmd:protocol;usgin:overlayAPI,,service,@tomkralidis,Example
-ESRI:ArcIMS,urn:x-esri:serviceType:ArcIMS,ESRI ArcIMS Service,srv:serviceType;gmd:protocol;usgin:overlayAPI,,service,@tomkralidis,Example
-ESRI:ArcGIS,urn:x-esri:serviceType:ArcGIS,ESRI ArcGIS Service,srv:serviceType;gmd:protocol;usgin:overlayAPI,,service,@tomkralidis,Example
-OPeNDAP:OPeNDAP,http://opendap.org,OPeNDAP service,,srv:serviceType;gmd:protocol;usgin:overlayAPI,,service,@tomkralidis,Example
+ESRI:ArcIMS,urn:x-esri:serviceType:ArcIMS,ESRI ArcIMS Service,srv:serviceType;gmd:protocol;usgin:overlayAPI,service,@tomkralidis,Example
+ESRI:ArcGIS,urn:x-esri:serviceType:ArcGIS,ESRI ArcGIS Service,srv:serviceType;gmd:protocol;usgin:overlayAPI,service,@tomkralidis,Example
+OPeNDAP:OPeNDAP,http://opendap.org,OPeNDAP service,,srv:serviceType;gmd:protocol;usgin:overlayAPI,service,@tomkralidis,Example
 UNIDATA:NCSS,https://www.unidata.ucar.edu/software/thredds/current/tds/interfaceSpec/NetcdfSubsetService.html,NetCDF Subset Service,,TODO,,service,@tomkralidis,Example
 UNIDATA:CDMhttps://www.unidata.ucar.edu/software/thredds/current/netcdf-java/stream/CdmRemote.html,Common Data Model Remote Web Service,,TODO,,service,@tomkralidis,Example
 OGC:GMLhttp://www.opengis.net/gml,OGC Geography Markup Language,OGC:GML,,gmd:applicationProfile,,data,@tomkralidis,Example
