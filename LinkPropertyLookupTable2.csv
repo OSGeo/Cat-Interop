@@ -8,7 +8,7 @@ OGC:WPS,http://www.opengis.net/def/serviceType/ogc/wps,OGC Web Processing Servic
 ESRI:ArcIMS,urn:x-esri:serviceType:ArcIMS,ESRI ArcIMS Service,,srv:serviceType;gmd:protocol;usgin:overlayAPI,,service,@tomkralidis,Example
 ESRI:ArcGIS,urn:x-esri:serviceType:ArcGIS,ESRI ArcGIS Service,,srv:serviceType;gmd:protocol;usgin:overlayAPI,,service,@tomkralidis,Example
 OPeNDAP:OPeNDAP,http://opendap.org,OPeNDAP service,,srv:serviceType;gmd:protocol;usgin:overlayAPI,,service,@tomkralidis,Example
-Unidata:NCSS,https://www.unidata.ucar.edu/software/thredds/current/tds/interfaceSpec/NetcdfSubsetService.html,NetCDF Subset Service,,TODO,,service,@tomkralidis,Example
-Unidata:CDM,https://www.unidata.ucar.edu/software/thredds/current/netcdf-java/stream/CdmRemote.html,Common Data Model Remote Web Service,,TODO,,service,@tomkralidis,Example
+UNIDATA:NCSS,https://www.unidata.ucar.edu/software/thredds/current/tds/interfaceSpec/NetcdfSubsetService.html,NetCDF Subset Service,,TODO,,service,@tomkralidis,Example
+UNIDATA:CDM,https://www.unidata.ucar.edu/software/thredds/current/netcdf-java/stream/CdmRemote.html,Common Data Model Remote Web Service,,TODO,,service,@tomkralidis,Example
 OGC:GML,http://www.opengis.net/gml,OGC Geography Markup Language,,gmd:applicationProfile,,data,@tomkralidis,Example
 WWW:LINK,http://www.w3.org/TR/xlink/,Web Address (URL),,gmd:URL;@xlink:href,,information,@tomkralidis,Example
