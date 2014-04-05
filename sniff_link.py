@@ -1,4 +1,3 @@
-
 import logging
 
 LOGGER = logging.getLogger(__name__)
@@ -63,13 +62,13 @@ def sniff_link(url):
         protocol = 'UNIDATA:CDM'
     elif inurl(['gml'], link, 'end'):
         protocol = 'OGC:GML'
-    # extra tests
     elif inurl(['html', 'shtml', 'htm'], link, 'end'):
         protocol = 'WWW:LINK'
+    # extra tests
     elif all([inurl(['census.gov/geo/tiger'], link),
               inurl(['zip'], link, 'end')]):
         protocol = 'ESRI:SHAPEFILE'
-    elif inurl(['zip', 'tar.gz', 'tgz', 'bz2'], link, 'end'):
+    elif inurl(['zip', 'tar.gz', 'tgz', 'gz', 'bz2'], link, 'end'):
         protocol = 'WWW:DOWNLOAD'
     else:
         LOGGER.info('No link type detected')
