@@ -7,9 +7,19 @@ OGC:WMS,http://www.opengis.net/def/serviceType/ogc/wms,OGC Web Map Service,http:
 OGC:WPS,http://www.opengis.net/def/serviceType/ogc/wps,OGC Web Processing Service,http://www.opengeospatial.org/standards/wps,srv:serviceType;gmd:protocol;usgin:overlayAPI,,service,@tomkralidis,Example
 ESRI:ArcIMS,urn:x-esri:serviceType:ArcIMS,ESRI ArcIMS Service,,srv:serviceType;gmd:protocol;usgin:overlayAPI,Esri Inc.,service,@tomkralidis,Example
 ESRI:ArcGIS,urn:x-esri:serviceType:ArcGIS,ESRI ArcGIS Service,,srv:serviceType;gmd:protocol;usgin:overlayAPI,Esri Inc.,service,@tomkralidis,Example
-ESRI:MPK,http://esriurl.com/mpk.xml,ArcGIS Map Package, http://esriurl.com/mpk.xml,gmd:URL;@xlink:href,Esri Inc.,data,@mhogeweg,Example URI for ArcGIS Map Package
+ESRI:MPK,http://esriurl.com/mpk.xml,ArcGIS Map Package, http://esriurl.com/mpk.xml,gmd:MD_Format/gmd:name;gmd:applicationProfile,Esri Inc.,data,@mhogeweg,"Example URI for ArcGIS Map Package. Mpk is a file format. A map package contains a map document (.mxd) and the data referenced by the layers it contains, packaged into one convenient, portable file."
 OPeNDAP:OPeNDAP,http://opendap.org,OPeNDAP service,,srv:serviceType;gmd:protocol;usgin:overlayAPI,,service,@tomkralidis,Example
 UNIDATA:NCSS,https://www.unidata.ucar.edu/software/thredds/current/tds/interfaceSpec/NetcdfSubsetService.html,NetCDF Subset Service,,TODO,,service,@tomkralidis,Example
 UNIDATA:CDM,https://www.unidata.ucar.edu/software/thredds/current/netcdf-java/stream/CdmRemote.html,Common Data Model Remote Web Service,,TODO,,service,@tomkralidis,Example
 OGC:GML,http://www.opengis.net/gml,OGC Geography Markup Language,,gmd:applicationProfile,,data,@tomkralidis,Example
 WWW:LINK,http://www.w3.org/TR/xlink/,Web Address (URL),,gmd:URL;@xlink:href,,information,@tomkralidis,Example
+WWW:WSDL,http://www.w3.org/TR/wsdl,Web Service Description Language XML document describing service operation,http://www.w3.org/TR/wsdl,gmd:applicationProfile,W3C,,@smrazgs,
+OpenSearch1.1,http://www.opensearch.org/Specifications/OpenSearch/1.1#OpenSearch_URL_template_syntax,OpenSearch template,http://www.opensearch.org/Specifications/OpenSearch/1.1#OpenSearch_URL_template_syntax,usgin:template;gmd:applicationProfile,OpenSearch.org,,@smrazgs,use to indicate link is a template conforming to the OpenSearch specification
+OpenSearch1.1:Description,http://www.opensearch.org/Specifications/OpenSearch/1.1#OpenSearch_description_document,OpenSearch description document,http://www.opensearch.org/Specifications/OpenSearch/1.1#OpenSearch_description_document,gmd:applicationProfile,OpenSearch.org,,@smrazgs,indicates a link to get an openSearch description document
+information,,link provides information about resource,,gmd:function,ISO TC211,,@smrazgs,
+template,,link provides template to access resource,,gmd:function,USGIN,,@smrazgs,
+download,,link will get resource,,gmd:function,ISO TC211,,@smrazgs,
+service,,link is service endpoint,,gmd:function,ISO TC211,,@smrazgs,
+order,,link provides form to obtain resource,,gmd:function,ISO TC211,,@smrazgs,
+search,,link provides form for searching resource,,gmd:function,ISO TC211,,@smrazgs,
+esip:CollectionCast,http://commons.esipfed.org/ns/discovery/1.2/collectionCast# ,ESIP collection cast,,gmd:applicationProfile,ESIP,,@smrazgs,
