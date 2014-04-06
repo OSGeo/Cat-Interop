@@ -16,10 +16,10 @@ WWW:LINK,http://www.w3.org/TR/xlink/,Web Address (URL),,gmd:URL;@xlink:href,,inf
 WWW:WSDL,http://www.w3.org/TR/wsdl,Web Service Description Language XML document describing service operation,http://www.w3.org/TR/wsdl,gmd:applicationProfile,W3C,,@smrazgs,
 OpenSearch1.1,http://www.opensearch.org/Specifications/OpenSearch/1.1#OpenSearch_URL_template_syntax,OpenSearch template,http://www.opensearch.org/Specifications/OpenSearch/1.1#OpenSearch_URL_template_syntax,usgin:template;gmd:applicationProfile,OpenSearch.org,,@smrazgs,use to indicate link is a template conforming to the OpenSearch specification
 OpenSearch1.1:Description,http://www.opensearch.org/Specifications/OpenSearch/1.1#OpenSearch_description_document,OpenSearch description document,http://www.opensearch.org/Specifications/OpenSearch/1.1#OpenSearch_description_document,gmd:applicationProfile,OpenSearch.org,,@smrazgs,indicates a link to get an openSearch description document
-information,,link provides information about resource,,gmd:function,ISO TC211,,@smrazgs,
-template,,link provides template to access resource,,gmd:function,USGIN,,@smrazgs,
-download,,link will get resource,,gmd:function,ISO TC211,,@smrazgs,
-service,,link is service endpoint,,gmd:function,ISO TC211,,@smrazgs,
-order,,link provides form to obtain resource,,gmd:function,ISO TC211,,@smrazgs,
-search,,link provides form for searching resource,,gmd:function,ISO TC211,,@smrazgs,
+information,,link provides information about resource,,gmd:function,ISO TC211,,@smrazgs,function of link it to http:GET information about resource
+template,http://tools.ietf.org/html/rfc6570,link provides template to access resource,http://tools.ietf.org/html/rfc6570,gmd:function,USGIN,,@smrazgs,Link text is a URI template; applicationProfile attribute value associated with the link should indicate the specification for the template scheme (e.g. OpenSearch1.1).
+download,,link will get resource,,gmd:function,ISO TC211,,@smrazgs,function of link it to http:GET a representation of the resource; the link type attribute value(s) should indicate the MIME types of available representations
+service,,link is service endpoint,,gmd:function,ISO TC211,,@smrazgs,"Link value is the URL of a service endpoint; the link protocol and applicationProfile (and possibly other link properties like overlayAPI, depending on the link attributes profile in use) attribute values should identify the service protocol specification"
+order,,link provides form to obtain resource,,gmd:function,ISO TC211,,@smrazgs,link value is URL of web application requiring user interaction to order/request access to the resource
+search,,link provides form for searching resource,,gmd:function,ISO TC211,,@smrazgs,link value is URL of web application requiring user interaction to search/browse/subset the resource.
 esip:CollectionCast,http://commons.esipfed.org/ns/discovery/1.2/collectionCast# ,ESIP collection cast,,gmd:applicationProfile,ESIP,,@smrazgs,
