@@ -62,14 +62,16 @@ def sniff_link(url):
         protocol = 'UNIDATA:CDM'
     elif inurl(['gml'], link, 'end'):
         protocol = 'OGC:GML'
-    elif inurl(['html', 'shtml', 'htm'], link, 'end'):
+    elif inurl(['htm', 'html', 'shtml'], link, 'end'):
         protocol = 'WWW:LINK'
     # extra tests
     elif all([inurl(['census.gov/geo/tiger'], link),
               inurl(['zip'], link, 'end')]):
         protocol = 'ESRI:SHAPEFILE'
-    elif inurl(['zip', 'tar.gz', 'tgz', 'gz', 'bz2'], link, 'end'):
+    elif inurl(['7z', 'bz2', 'gz', 'rar', 'tar.gz', 'tgz', zip'], link, 'end'):
         protocol = 'WWW:DOWNLOAD'
+    elif inurl(['kml', 'kmz'], link, 'end'):
+        protocol = 'OGC:KML
     else:
         LOGGER.info('No link type detected')
 
