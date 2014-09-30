@@ -8,7 +8,7 @@ env:
   - VERSION_DATE=`git log --tags --simplify-by-decoration --pretty="format:%ai %d" | grep "($VERSION)" | awk '{print $1}'`
 
 install:
-  - pip install -r requirements.txt
+  - pip install -r export/requirements.txt
 
 script:
   - python export/export.py $VERSION $VERSION_DATE LinkPropertyLookupTable.csv xml
