@@ -9,6 +9,7 @@ env:
 
 install:
   - pip install -r export/requirements.txt
+  - pip install -r export/requirements-dev.txt
 
 script:
   - python export/export.py $VERSION $VERSION_DATE LinkPropertyLookupTable.csv xml
