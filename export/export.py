@@ -36,6 +36,7 @@ from slugify import slugify
 
 THISDIR = os.path.dirname(os.path.realpath(__file__))
 
+
 def slugify_identifier(value):
     """helper function to slugify identifiers to pass gml:id constraints"""
 
