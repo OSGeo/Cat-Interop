@@ -4,12 +4,11 @@ python:
   - "2.7"
 
 env:
-  - VERSION=`cat VERSION.txt` VERSION_DATE=`git log --tags --simplify-by-decoration --pretty="format:%ai %d" | grep "($VERSION)" | awk '{print $1}'`
+  - VERSION=`cat VERSION.txt` VERSION_DATE=`git log --tags --simplify-by-decoration --pretty="format:%ai %d" | tail -1 | awk '{print $1}'`
 
 install:
   - pip install -r export/requirements.txt
   - pip install -r export/requirements-dev.txt
-  - if [ "$VERSION_DATE" == ""]; then VERSION_DATE=`git log --tags --simplify-by-decoration --pretty="format:%ai %d" | tail -1 | awk '{print $1}'`; fi
 
 script:
   - python export/export.py $VERSION $VERSION_DATE LinkPropertyLookupTable.csv xml
