@@ -12,4 +12,4 @@ install:
 
 script:
   - python export/export.py $VERSION $VERSION_DATE LinkPropertyLookupTable.csv xml
-  - pep8 export/export.py
+  - flake8 export/export.py
