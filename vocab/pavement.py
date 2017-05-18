@@ -30,7 +30,7 @@
 
 import os
 import shutil
-from urllib2 import urlopen
+from urllib.request import urlopen
 
 from paver.easy import Bunch, cmdopts, options, path, task
 

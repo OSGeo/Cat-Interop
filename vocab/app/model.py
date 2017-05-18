@@ -41,7 +41,7 @@ class Vocabulary(object):
             # serialize to JSON
             csvobj = csv.reader(vocab)
             # skip CSV header
-            csvobj.next()
+            next(csvobj)
             self.json = []
             for row in csvobj:
                 self.json.append({'link_type': row[0],
