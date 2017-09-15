@@ -80,5 +80,6 @@ def resolve_vocab_member(provider, resource_type, identifier, version):
         if link['link_type'] == url:
             return redirect(link['redirect'])
 
+
 if __name__ == '__main__':  # run locally, for fun
     APP.run(host='0.0.0.0', port=8000, use_reloader=True, debug=True)

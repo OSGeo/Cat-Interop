@@ -53,6 +53,7 @@ def csv2ct(version, version_date, csvfile):
     return template.render(version=version, version_date=version_date,
                            link_types=reader)
 
+
 if __name__ == '__main__':
     if len(sys.argv) < 5:
         print('Usage: %s <version> <version_date> <csv> <xml>' % sys.argv[0])

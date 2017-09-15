@@ -38,7 +38,7 @@ from paver.easy import Bunch, cmdopts, options, path, task
 options(
     app=Bunch(
         home=path('app'),
-        voc='https://raw.githubusercontent.com/OSGeo/Cat-Interop/%s/LinkPropertyLookupTable.csv',
+        voc='https://raw.githubusercontent.com/OSGeo/Cat-Interop/%s/LinkPropertyLookupTable.csv',  # noqa
         build=path('app/build'),
         version=open('VERSION.txt').read().strip()
     )
@@ -56,7 +56,8 @@ def setup():
             url = options.app.voc % 'master'
         else:
             url = options.app.voc % options.app.version
-        with open(options.app.build / 'LinkPropertyLookupTable.csv', 'w') as fileobj:
+        file_ = options.app.build / 'LinkPropertyLookupTable.csv'
+        with open(file_, 'w') as fileobj:
             fileobj.write(urlopen(url).read())
 
 
