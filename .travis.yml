@@ -2,6 +2,7 @@ language: python
 
 python:
   - "2.7"
+  - "3.5"
 
 env:
   - VERSION="`cat VERSION.txt`" VERSION_DATE="`git log --tags --simplify-by-decoration --pretty='format:%ai %d' | tail -1 | awk '{print $1}'`"
@@ -12,4 +13,5 @@ install:
 
 script:
   - python export/export.py $VERSION $VERSION_DATE LinkPropertyLookupTable.csv xml
+  - python export/export.py $VERSION $VERSION_DATE LinkPropertyLookupTable.csv skos
   - flake8 export/export.py

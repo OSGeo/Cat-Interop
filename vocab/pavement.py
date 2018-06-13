@@ -3,7 +3,7 @@
 #
 # Authors: Tom Kralidis <tomkralidis@gmail.com>
 #
-# Copyright (c) 2014 Tom Kralidis
+# Copyright (c) 2018 Tom Kralidis
 #
 # Permission is hereby granted, free of charge, to any person
 # obtaining a copy of this software and associated documentation
@@ -30,7 +30,10 @@
 
 import os
 import shutil
-from urllib2 import urlopen
+try:
+    from urllib2 import urlopen
+except ImportError:
+    from urllib2.request import urlopen
 
 from paver.easy import Bunch, cmdopts, options, path, task
 
