@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- version: {{ version }} ({{ version_date }}) -->
+<rdf:RDF xmlns:api="http://purl.org/linked-data/api/vocab#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:policy="http://www.opengis.net/ogc-na#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <rdf:Description rdf:about="https://github.com/OSGeo/Cat-Interop">
+    <policy:scope>
+      <skos:Collection rdf:about="https://geo.woudc.org/def/data/ozone/total-column-ozone/totalozone/1.0/">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cat-Interop CodeLists</rdfs:label>
+        <dc:source rdf:datatype="http://www.w3.org/2001/XMLSchema#string"><://github.com/OSGeo/Cat-Interop</dc:source>
+        <skos:prefLabel rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cat-Interop CodeLists</skos:prefLabel>
+        {% for link_type in link_types %}
+        <skos:member>
+          <rdf:Description rdf:about="{{ link_type['uri'] }}">
+            <foaf:name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{{ link_type['label'] }}</foaf:name>
+            <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">{{ link_type['identifier'] }}</rdfs:label>
+          </rdf:Description>
+        </skos:member>
+        {% endfor %}
+      </skos:Collection>
+    <policy:scope>
+  </rdf:Description>
+</rdf:RDF>

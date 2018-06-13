@@ -3,7 +3,7 @@
 #
 # Authors: Tom Kralidis <tomkralidis@gmail.com>
 #
-# Copyright (c) 2014 Tom Kralidis
+# Copyright (c) 2018 Tom Kralidis
 #
 # Permission is hereby granted, free of charge, to any person
 # obtaining a copy of this software and associated documentation
@@ -41,7 +41,7 @@ class Vocabulary(object):
             # serialize to JSON
             csvobj = csv.reader(vocab)
             # skip CSV header
-            csvobj.next()
+            next(csvobj)
             self.json = []
             for row in csvobj:
                 self.json.append({'link_type': row[0],
