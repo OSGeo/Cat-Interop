@@ -69,3 +69,4 @@ OASIS:AMQP,https://amqp.org,Advanced Message Queuing Protocol,https://amqp.org,g
 Amazon:AWS:S3,https://aws.amazon.com/documentation/s3/,Amazon Simple Storage Solution,https://aws.amazon.com/documentation/s3/,gmd:protocol,Amazon,,@amilan17,,,
 Google:GCP:BigQuery,https://cloud.google.com/bigquery/,Google Big Query,https://cloud.google.com/bigquery/,gmd:protocol,Google,,@amilan17,,,
 Google:GCP:GCS,https://cloud.google.com/storage/,Google Cloud Storage,https://cloud.google.com/storage/,gmd:protocol,Google,,@amilan17,,,
+IIIF:Image,http://iiif.io/api/image,IIIF Image API,http://iiif.io/api/image/2.1/ ,,IIIF,service,@mejackreed,,,
