@@ -13,4 +13,5 @@ install:
 
 script:
   - python export/export.py $VERSION $VERSION_DATE LinkPropertyLookupTable.csv xml
+  - python export/export.py $VERSION $VERSION_DATE LinkPropertyLookupTable.csv skos
   - flake8 export/export.py
