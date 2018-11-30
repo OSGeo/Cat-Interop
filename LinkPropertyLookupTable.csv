@@ -70,3 +70,4 @@ OASIS:AMQP,https://amqp.org,Advanced Message Queuing Protocol,https://amqp.org,g
 Amazon:AWS:S3,https://aws.amazon.com/documentation/s3/,Amazon Simple Storage Solution,https://aws.amazon.com/documentation/s3/,gmd:protocol,Amazon,,@amilan17,,
 Google:GCP:BigQuery,https://cloud.google.com/bigquery/,Google Big Query,https://cloud.google.com/bigquery/,gmd:protocol,Google,,@amilan17,,
 Google:GCP:GCS,https://cloud.google.com/storage/,Google Cloud Storage,https://cloud.google.com/storage/,gmd:protocol,Google,,@amilan17,,
+video:mp4,,FILE TRANSFER PROTOCOL (HTTPS),,gmd:protocol,,,@yuanjie0913,Use to indicate gmd:CI_OnlineResource URLs that link to a target resource representation for download,
