@@ -1,9 +1,8 @@
-# -*- coding: ISO-8859-15 -*-
 # =================================================================
 #
 # Authors: Tom Kralidis <tomkralidis@gmail.com>
 #
-# Copyright (c) 2018 Tom Kralidis
+# Copyright (c) 2019 Tom Kralidis
 #
 # Permission is hereby granted, free of charge, to any person
 # obtaining a copy of this software and associated documentation
@@ -30,10 +29,7 @@
 
 import os
 import shutil
-try:
-    from urllib2 import urlopen
-except ImportError:
-    from urllib2.request import urlopen
+from urllib.request import urlopen
 
 from paver.easy import Bunch, cmdopts, options, path, task
 
@@ -41,7 +37,7 @@ from paver.easy import Bunch, cmdopts, options, path, task
 options(
     app=Bunch(
         home=path('app'),
-        voc='https://raw.githubusercontent.com/OSGeo/Cat-Interop/%s/LinkPropertyLookupTable.csv',  # noqa
+        voc='https://raw.githubusercontent.com/OSGeo/Cat-Interop/{}/LinkPropertyLookupTable.csv',  # noqa
         build=path('app/build'),
         version=open('VERSION.txt').read().strip()
     )
@@ -56,11 +52,11 @@ def setup():
         options.app.build.mkdir()
     if not os.path.exists(options.app.build / 'LinkPropertyLookupTable.csv'):
         if options.app.version.endswith('-dev'):  # master
-            url = options.app.voc % 'master'
+            url = options.app.voc.format('master')
         else:
-            url = options.app.voc % options.app.version
+            url = options.app.voc.format(options.app.version)
         file_ = options.app.build / 'LinkPropertyLookupTable.csv'
-        with open(file_, 'w') as fileobj:
+        with open(file_, 'wb') as fileobj:
             fileobj.write(urlopen(url).read())
 
 
@@ -86,8 +82,8 @@ def deploy():
 
     loc = [
         'import sys',
-        'sys.path.insert(0, "%s/app")' % venv,
-        'activate = "%s/bin/activate_this.py"' % venv,
+        'sys.path.insert(0, "{}/app")'.format(venv),
+        'activate = "{}/bin/activate_this.py"'.format(venv),
         'execfile(activate_this, {__file__: activate})',
         'from app import APP as application'
     ]
@@ -97,8 +93,8 @@ def deploy():
 
     loc = [
         'WSGIDaemonProcess vocab user=user1 group=group1 threads=5',
-        'WSGIScriptAlias /vocab %s' % options.app.home,
-        '<Directory %s>' % path(venv),
+        'WSGIScriptAlias /vocab {}'.format(options.app.home),
+        '<Directory {}>'.format(path(venv)),
         ' WSGIProcessGroup vocab',
         ' WSGIApplicationGroup %{GLOBAL}',
         ' Order deny,allow',
