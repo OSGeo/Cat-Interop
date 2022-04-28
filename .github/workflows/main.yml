@@ -1,0 +1,30 @@
+name: build ⚙️
+
+on: [ push, pull_request ]
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.7, 3.8]
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v2
+      name: Setup Python ${{ matrix.python-version }}
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install system dependencies 📦
+      run: sudo apt-get install -y dh-python devscripts fakeroot debhelper python3-all python3-setuptools
+    - name: Install requirements 📦
+      run: |
+        python3 -m pip install --upgrade pip
+        pip install -r export/requirements.txt
+        pip install -r export/requirements-dev.txt
+    - name: Install package 📦
+      run: python3 setup.py install
+    - name: run tests ⚙️
+      python3 export/export.py `cat VERSION.txt` `git log --tags --simplify-by-decoration --pretty='format:%ai %d' | tail -1 | awk '{print $1}'` LinkPropertyLookupTable.csv xml
+      python3 export/export.py `cat VERSION.txt` `git log --tags --simplify-by-decoration --pretty='format:%ai %d' | tail -1 | awk '{print $1}'` LinkPropertyLookupTable.csv skos
+    - name: run flake8 ⚙️
+      run: flake8 export/export.py
