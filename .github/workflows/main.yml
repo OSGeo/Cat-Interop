@@ -24,7 +24,8 @@ jobs:
     - name: Install package 📦
       run: python3 setup.py install
     - name: run tests ⚙️
-      python3 export/export.py `cat VERSION.txt` `git log --tags --simplify-by-decoration --pretty='format:%ai %d' | tail -1 | awk '{print $1}'` LinkPropertyLookupTable.csv xml
-      python3 export/export.py `cat VERSION.txt` `git log --tags --simplify-by-decoration --pretty='format:%ai %d' | tail -1 | awk '{print $1}'` LinkPropertyLookupTable.csv skos
+      run: |
+        python3 export/export.py `cat VERSION.txt` `git log --tags --simplify-by-decoration --pretty='format:%ai %d' | tail -1 | awk '{print $1}'` LinkPropertyLookupTable.csv xml
+        python3 export/export.py `cat VERSION.txt` `git log --tags --simplify-by-decoration --pretty='format:%ai %d' | tail -1 | awk '{print $1}'` LinkPropertyLookupTable.csv skos
     - name: run flake8 ⚙️
       run: flake8 export/export.py
