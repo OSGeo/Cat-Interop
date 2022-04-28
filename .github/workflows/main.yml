@@ -23,7 +23,7 @@ jobs:
         pip install -r export/requirements-dev.txt
     - name: run exporter ⚙️
       run: |
-        python3 export/export.py `cat VERSION.txt` `git log --tags --simplify-by-decoration --pretty='format:%ai %d' | tail -1 | awk '{print $1}'` LinkPropertyLookupTable.csv xml
-        python3 export/export.py `cat VERSION.txt` `git log --tags --simplify-by-decoration --pretty='format:%ai %d' | tail -1 | awk '{print $1}'` LinkPropertyLookupTable.csv skos
+        python3 export/export.py `cat VERSION.txt` 2022-04-28 LinkPropertyLookupTable.csv xml
+        python3 export/export.py `cat VERSION.txt` 2022-04-28 LinkPropertyLookupTable.csv skos
     - name: run flake8 ⚙️
       run: flake8 export/export.py
