@@ -73,4 +73,4 @@ Google:GCP:GCS,https://cloud.google.com/storage/,Google Cloud Storage,https://cl
 IIIF:Image,http://iiif.io/api/image,IIIF Image API,http://iiif.io/api/image/2.1/,,IIIF,service,@mejackreed,,
 FILE:GEO,,Vector file on the network,,gmd:protocol,,,@nyalldawson,Used by GeoNetwork and Geonode,
 FILE:RASTER,,Raster file on the network,,gmd:protocol,,,@nyalldawson,Used by GeoNetwork and Geonode,
-DB:POSTGIS,,PostGIS table,https://postgis.net,gmd:protocol,PostGIS,service,@nyalldawson,Used by GeoNetwork OpenSource and GeoNode
+DB:POSTGIS,,PostGIS table,https://postgis.net,gmd:protocol,PostGIS,service,@nyalldawson,Used by GeoNetwork OpenSource and GeoNode,
