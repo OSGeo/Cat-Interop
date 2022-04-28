@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/OSGeo/Cat-Interop.png)](https://travis-ci.org/OSGeo/Cat-Interop)
+[![Build Status](https://github.com/OSGeo/Cat-Interop/workflows/build%20%E2%9A%99%EF%B8%8F/badge.svg)](https://github.com/OSGeo/Cat-Interop/actions)
 
 ## OSGeo Catalogue Interoperability Working Group
 A place to version documents and discuss issues surrounding the Cat-Interop Project.
