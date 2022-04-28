@@ -1,9 +1,8 @@
-# -*- coding: ISO-8859-15 -*-
 ###################################################################
 #
 # Authors: Tom Kralidis <tomkralidis@gmail.com>
 #
-# Copyright (c) 2014 Tom Kralidis
+# Copyright (c) 2019 Tom Kralidis
 #
 # Permission is hereby granted, free of charge, to any person
 # obtaining a copy of this software and associated documentation
@@ -52,7 +51,7 @@ def resolve_resource_type(resource_type):
     if resource_type not in ['service', 'data']:
         abort(404)
 
-    url = 'http://osgeo.org/vocab/%s' % resource_type
+    url = 'http://osgeo.org/vocab/{}'.format(resource_type)
     members = VOCAB.filter(url)
 
     return Response(VOCAB.dumps(data=members), mimetype='application/json')
@@ -62,7 +61,7 @@ def resolve_resource_type(resource_type):
 def resolve_resource_type_provider(resource_type, provider):
     """resolve a given vocabulary resource type and provider"""
 
-    url = 'http://osgeo.org/vocab/%s/%s' % (resource_type, provider)
+    url = 'http://osgeo.org/vocab/{}/{}'.format(resource_type, provider)
     members = VOCAB.filter(url)
 
     return Response(VOCAB.dumps(data=members), mimetype='application/json')
@@ -72,8 +71,8 @@ def resolve_resource_type_provider(resource_type, provider):
 def resolve_vocab_member(provider, resource_type, identifier, version):
     """resolve a given vocabulary member"""
 
-    url = 'http://osgeo.org/vocab/%s' % '/'.join([resource_type, provider,
-                                                  identifier, version])
+    url = 'http://osgeo.org/vocab/{}'.format('/'.join([resource_type, provider,
+                                                       identifier, version]))
 
     # check if the link_type exists:
     for link in VOCAB.json:
